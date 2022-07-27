@@ -26653,6 +26653,14 @@
       "oAP" : "\/documentation\/icons\/line-awesome.html",
       "oF" : 0
     },
+    "\/erro-404.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/erro-404.html",
+      "oF" : 0
+    },
     "\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -26747,6 +26755,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/layouts\/toolbars\/toolbar-5.html",
+      "oF" : 0
+    },
+    "\/novo-recurso.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/novo-recurso.html",
       "oF" : 0
     },
     "\/pages\/about.html" : {

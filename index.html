@@ -79,7 +79,7 @@
 										<!--end::Menu separator-->
 										<!--begin::Menu item-->
 										<div class="menu-item px-2">
-											<a href="#" class="menu-link px-5">Sair do sistema</a>
+											<a href="sign-in.html" class="menu-link px-5">Sair do sistema</a>
 										</div>
 										<!--end::Menu item-->
 									</div>
@@ -102,7 +102,7 @@
 						<div class="content flex-row-fluid" id="kt_content">
 
 							<!--begin::Toolbar-->
-							<div class="toolbar py-5 card card-flush mb-10" id="kt_toolbar">
+							<div class="toolbar py-5 card card-flush mb-5" id="kt_toolbar">
 								<!--begin::Container-->
 								<div id="kt_toolbar_container" class="container-xxl d-flex flex-stack flex-wrap">
 									<!--begin::Page title-->
@@ -138,48 +138,52 @@
 							</div>
 							<!--end::Toolbar-->
 
-							<!--begin::Alert-->
-							<div class="alert bg-light-primary border border-primary d-flex flex-column flex-sm-row p-5 mb-10">
-								<!--begin::Icon-->
-								<span class="svg-icon svg-icon-2hx svg-icon-primary me-4 mb-5 mb-sm-0">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="currentColor"/>
-										<rect x="11" y="17" width="7" height="2" rx="1" transform="rotate(-90 11 17)" fill="currentColor"/>
-										<rect x="11" y="9" width="2" height="2" rx="1" transform="rotate(-90 11 9)" fill="currentColor"/>
-									</svg>										
-								</span>
-								<!--end::Icon-->
-								<!--begin::Wrapper-->
-								<div class="d-flex flex-column">
-									<!--begin::Title-->
-									<h5 class="mb-1">Instruções</h5>
-									<!--end::Title-->
-									<!--begin::Content-->
-									<p>
-										Prezado candidato: Leia atentamente as orientações a fim de que seu recurso siga o destino correto e ao mesmo tempo nos ajude a fornecer um serviço mais eficiente.
-									</p>
-									<p>
-										Nesta página, você pode interpor recurso por discordar do gabarito de alguma questão. Em caso de anulação, <strong>todos os candidatos recebem a pontuação</strong> correspondente.
-									</p>
-									<p>
-										Portanto, não é necessário que os candidatos copiem os recursos uns dos outros e os interponham vinculados à sua inscrição.
-									</p>
-									<p>
-										A anulação de alguma questão está vinculada à existência de problemas em sua elaboração ou na correção do gabarito, e não à quantidade de recursos interpostos pelo total de candidatos.
-									</p>
-									<!--end::Content-->
-								</div>
-								<!--end::Wrapper-->
-							</div>
-							<!--end::Alert-->
 
 							<!--begin::Table-->
-							<div class="card card-flush mt-6 mt-xl-9">
+							<div class="card card-flush">
+
 								<!--begin::Card header-->
-								<div class="card-header mt-5">
+								<div class="card-header mt-10">
+
+									<!--begin::Alert-->
+									<div class="alert bg-light-primary border border-primary d-flex flex-column flex-sm-row p-5 mb-10">
+										<!--begin::Icon-->
+										<span class="svg-icon svg-icon-2hx svg-icon-primary me-4 mb-5 mb-sm-0">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="currentColor"/>
+												<rect x="11" y="17" width="7" height="2" rx="1" transform="rotate(-90 11 17)" fill="currentColor"/>
+												<rect x="11" y="9" width="2" height="2" rx="1" transform="rotate(-90 11 9)" fill="currentColor"/>
+											</svg>										
+										</span>
+										<!--end::Icon-->
+										<!--begin::Wrapper-->
+										<div class="d-flex flex-column">
+											<!--begin::Title-->
+											<h5 class="mb-1">Instruções</h5>
+											<!--end::Title-->
+											<!--begin::Content-->
+											<p>
+												Prezado candidato: Leia atentamente as orientações a fim de que seu recurso siga o destino correto e ao mesmo tempo nos ajude a fornecer um serviço mais eficiente.
+											</p>
+											<p>
+												Nesta página, você pode interpor recurso por discordar do gabarito de alguma questão. Em caso de anulação, <strong>todos os candidatos recebem a pontuação</strong> correspondente.
+											</p>
+											<p>
+												Portanto, não é necessário que os candidatos copiem os recursos uns dos outros e os interponham vinculados à sua inscrição.
+											</p>
+											<p>
+												A anulação de alguma questão está vinculada à existência de problemas em sua elaboração ou na correção do gabarito, e não à quantidade de recursos interpostos pelo total de candidatos.
+											</p>
+											<!--end::Content-->
+										</div>
+										<!--end::Wrapper-->
+									</div>
+									<!--end::Alert-->
+
+
 									<!--begin::Card title-->
 									<div class="card-title flex-column">
-										<h3 class="fw-bold mb-1">Lista de Recursos Interpostos</h3>
+										<h3 class="fw-bold mb-5">Lista de Recursos Interpostos</h3>
 										<!-- <div class="fs-6 text-gray-400">Total $260,300 sepnt so far</div> -->
 									</div>
 									<!--end::Card title-->
@@ -341,6 +345,7 @@
 		</div>
 		<!--end::Root-->
 		<!--end::Main-->
+
 		<!--begin::Scrolltop-->
 		<div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
 			<!--begin::Svg Icon | path: icons/duotune/arrows/arr066.svg-->
@@ -353,14 +358,13 @@
 			<!--end::Svg Icon-->
 		</div>
 		<!--end::Scrolltop-->
-		<!--begin::Modals-->
 
+		<!--begin::Modals-->
 		<div class="modal fade" tabindex="-1" id="kt_modal_1">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
 						<h3 class="modal-title">Selecione o Concurso</h3>
-		
 						<!--begin::Close-->
 						<a href="#" data-bs-dismiss="modal" aria-label="Close"><span class="svg-icon svg-icon-1">
 							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -371,7 +375,6 @@
 						</span></a>
 						<!--end::Close-->
 					</div>
-		
 					<div class="modal-body">
 						<!--begin::Radio group-->
 						<div data-kt-buttons="true">
@@ -449,13 +452,15 @@
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
-						<button type="button" class="btn btn-primary">Prosseguir</button>
+						<form action="novo-recurso.html">
+							<button type="submit" class="btn btn-primary">Prosseguir</button>
+						</form>
 					</div>
 				</div>
 			</div>
 		</div>
-
 		<!--end::Modals-->
+
 		<!--begin::Javascript-->
 		<script>var hostUrl = "assets/";</script>
 		<!--begin::Global Javascript Bundle(used by all pages)-->
