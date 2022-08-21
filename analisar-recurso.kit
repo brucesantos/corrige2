@@ -65,16 +65,19 @@
 							<!--begin::Table-->
 							<div class="card card-flush mb-5">
 								<!--begin::Card header-->
-								<div class="card-header">
+								<div class="card-header d-flex align-items-center">
 									<!--begin::Card title-->
-									<div class="card-title flex-column">
+									<div class="card-title">
 										<h3 class="fw-bold">Recursos para a Questão FA231</h3>
 									</div>
 									<!--end::Card title-->
+									<a href="#" class="text-primary exibir-mais">
+										Ocultar detalhes
+									</a>
 								</div>
 								<!--end::Card header-->
 								<!--begin::Card body-->
-								<div class="card-body pt-0">
+								<div id="detalhesQuestoes" class="card-body pt-0">
 									<div class="row mb-5">
 										<div class="col-12 col-md-3">
 											<label class="form-label">Concurso</label>
@@ -95,8 +98,8 @@
 									</div>
                   <div class="row" role="tablist">
 
-                    <div class="d-flex">
-                      <div class="card bg-light-info border border-info h-xl-100 flex-row flex-stack flex-wrap px-4 py-1 w-100 me-5">
+                    <div class="d-flex flex-column flex-md-row">
+                      <div class="card bg-light-info border border-info h-xl-100 flex-row flex-stack flex-wrap px-4 py-1 w-100 me-5 mb-5 mb-md-0">
                         <div class="d-flex flex-column py-2 w-100">
                           <div class="d-flex align-items-center fs-6 fw-bold mb-5">
                             Total de recursos
@@ -112,7 +115,7 @@
                           </div>
                         </div>
                       </div>
-											<div class="card bg-gray-100 border border-gray-600 h-xl-100 flex-row flex-stack flex-wrap px-4 py-1 w-100 me-5">
+											<div class="card bg-gray-100 border border-gray-600 h-xl-100 flex-row flex-stack flex-wrap px-4 py-1 w-100 me-5 mb-5 mb-md-0">
                         <div class="d-flex flex-column py-2 w-100">
                           <div class="d-flex align-items-center fs-6 fw-bold mb-5">
                             Tipo 1 - Branca
@@ -128,7 +131,7 @@
                           </div>
                         </div>
                       </div>
-											<div class="card bg-light-success border border-success h-xl-100 flex-row flex-stack flex-wrap px-4 py-1 w-100 me-5">
+											<div class="card bg-light-success border border-success h-xl-100 flex-row flex-stack flex-wrap px-4 py-1 w-100 me-5 mb-5 mb-md-0">
                         <div class="d-flex flex-column py-2 w-100">
                           <div class="d-flex align-items-center fs-6 fw-bold mb-5">
                             Tipo 2 - Verde
@@ -144,7 +147,7 @@
                           </div>
                         </div>
                       </div>
-											<div class="card bg-light-warning border border-warning h-xl-100 flex-row flex-stack flex-wrap px-4 py-1 w-100 me-5">
+											<div class="card bg-light-warning border border-warning h-xl-100 flex-row flex-stack flex-wrap px-4 py-1 w-100 me-5 mb-5 mb-md-0">
                         <div class="d-flex flex-column py-2 w-100">
                           <div class="d-flex align-items-center fs-6 fw-bold mb-5">
                             Tipo 3 - Amarela
@@ -160,7 +163,7 @@
                           </div>
                         </div>
                       </div>
-											<div class="card bg-light-primary border border-primary h-xl-100 flex-row flex-stack flex-wrap px-4 py-1 w-100">
+											<div class="card bg-light-primary border border-primary h-xl-100 flex-row flex-stack flex-wrap px-4 py-1 w-100 mb-5 mb-md-0">
                         <div class="d-flex flex-column py-2 w-100">
                           <div class="d-flex align-items-center fs-6 fw-bold mb-5">
                             Tipo 4 - Azul
@@ -187,7 +190,7 @@
 							<!--begin::Table-->
 							<div class="row">
 								<div class="col-12 col-md-6">
-										<embed src="custom/img/pdf.pdf" width="100%" height="600" type="application/pdf">
+									<embed src="custom/img/pdf.pdf" width="100%" height="600" type="application/pdf" style="min-height: 733px; border-radius: 16px;">
 								</div>
 								<div class="col-12 col-md-6">
 									<div class="card">
@@ -335,13 +338,54 @@
 						<!--end::Close-->
 					</div>
 					<div class="modal-body">
-						<p class="fw-bold">Você não marcou este recurso como lido.</p>
-						<p>Tem certeza que deseja visualizar o próximo recurso?</p>
+						<div class="mb-5">
+							<label class="form-label">Resultado da avaliação</label>
+							<select class="form-select form-select-solid" aria-label="Selecionar a questão">
+								<option disabled>Selecione o resultado</option>
+								<option value="1">Gabarito alterado</option>
+								<option value="2">02</option>
+								<option value="3">03</option>
+							</select>
+						</div>
+						<div>
+							<label class="form-label">Justificativa do avaliador</label>
+							<textarea class="form-control form-control-solid" id="kt_docs_maxlength_textarea" maxlength="5000" placeholder="Exemplo de recurso aqui..." rows="6" name="recurso">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque congue suspendisse ornare faucibus. Enim at consectetur eget magna aenean cras. Ac dolor velit pulvinar amet. Amet tellus pulvinar elit viverra sollicitudin. Parturient sapien augue scelerisque orci enim ullamcorper at facilisis sit. Laoreet ullamcorper praesent diam arcu, volutpat et non dictum. Aliquet lacus pellentesque in vehicula adipiscing mauris. Sed ultrices eget pharetra lobortis tincidunt lobortis. Vitae non gravida platea nam dignissim rutrum. Fusce lorem non cursus pellentesque mattis ridiculus. Arcu eget diam feugiat hac facilisi tortor scelerisque a. Id donec felis convallis amet urna, elementum tellus. Commodo integer id in urna, ut urna, nisi quis nec. Et ultrices vehicula adipiscing feugiat mauris ut.
+							</textarea>
+							<span class="fs-6 text-muted">Máximo de 5000 caracteres</span>
+						</div>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
-						<form action="#">
-							<button type="submit" class="btn btn-primary">Finalizar Análise</button>
+						<button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#salvarAlteracoes">Finalizar Análise</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal" tabindex="-1" id="salvarAlteracoes">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title">Salvar Alterações</h3>
+						<!--begin::Close-->
+						<a href="#" data-bs-dismiss="modal" aria-label="Close"><span class="svg-icon svg-icon-1">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="currentColor"/>
+								<rect x="7" y="15.3137" width="12" height="2" rx="1" transform="rotate(-45 7 15.3137)" fill="currentColor"/>
+								<rect x="8.41422" y="7" width="12" height="2" rx="1" transform="rotate(45 8.41422 7)" fill="currentColor"/>
+							</svg>
+						</span></a>
+						<!--end::Close-->
+					</div>
+					<div class="modal-body">
+						<p>Você tem certeza que deseja salvar as alterações?</p>
+						<p>Caso continue, esta ação não poderá ser desfeita.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+						<form action="detalhes-analise.html">
+							<button type="submit" class="btn btn-primary">Salvar</button>
 						</form>
 					</div>
 				</div>
@@ -371,6 +415,15 @@
 						$("#proximoRecurso").attr("data-bs-toggle", "modal").attr("data-bs-target", "#recursoNaoLido");
 						$("#recursoLido label").text("Marcar recurso como lido");
 					}
+				});
+
+				$(".exibir-mais").on("click", function(e){
+					e.preventDefault();
+					$("#detalhesQuestoes").slideToggle();
+					if ($(this).text() == "Mostrar detalhes")
+			       $(this).text("Ocultar detalhes")
+			    else
+			       $(this).text("Mostrar detalhes");
 				});
 
     </script>

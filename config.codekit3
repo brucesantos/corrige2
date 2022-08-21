@@ -25585,6 +25585,14 @@
       "oAP" : "\/dashboards\/website-analytics.html",
       "oF" : 0
     },
+    "\/detalhes-analise.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/detalhes-analise.html",
+      "oF" : 0
+    },
     "\/documentation\/base\/accordion.html" : {
       "cB" : 0,
       "ft" : 8192,
