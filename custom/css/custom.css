@@ -17,3 +17,11 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/*
+  Avaliador
+  Analise do Recurso
+*/
+#tabsRecurso li {
+  flex-grow: 1;
+}
