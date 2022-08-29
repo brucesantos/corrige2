@@ -27364,6 +27364,14 @@
       "oAP" : "\/pages\/user-profile\/projects.html",
       "oF" : 0
     },
+    "\/read-recurso.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/read-recurso.html",
+      "oF" : 0
+    },
     "\/read-recurso.kit" : {
       "cB" : 0,
       "ft" : 2048,
