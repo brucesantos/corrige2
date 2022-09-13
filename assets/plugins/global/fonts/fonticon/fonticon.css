@@ -1,10 +1,10 @@
 @font-face {
     font-family: "fonticon";
-    src: url("./fonticon.ttf?8c99757ffa673e941699f68d7b9547b2") format("truetype"),
-url("./fonticon.woff?8c99757ffa673e941699f68d7b9547b2") format("woff"),
-url("./fonticon.woff2?8c99757ffa673e941699f68d7b9547b2") format("woff2"),
-url("./fonticon.eot?8c99757ffa673e941699f68d7b9547b2#iefix") format("embedded-opentype"),
-url("./fonticon.svg?8c99757ffa673e941699f68d7b9547b2#fonticon") format("svg");
+    src: url("./fonticon.ttf?d63d4800091cd3eedf4d33622a251715") format("truetype"),
+url("./fonticon.woff?d63d4800091cd3eedf4d33622a251715") format("woff"),
+url("./fonticon.woff2?d63d4800091cd3eedf4d33622a251715") format("woff2"),
+url("./fonticon.eot?d63d4800091cd3eedf4d33622a251715#iefix") format("embedded-opentype"),
+url("./fonticon.svg?d63d4800091cd3eedf4d33622a251715#fonticon") format("svg");
 }
 
 i[class^="fonticon-"]:before, i[class*=" fonticon-"]:before {
@@ -14,8 +14,6 @@ i[class^="fonticon-"]:before, i[class*=" fonticon-"]:before {
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-    display: inline-block;
-    vertical-align: middle;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -232,4 +230,43 @@ i[class^="fonticon-"]:before, i[class*=" fonticon-"]:before {
 }
 .fonticon-equalizer:before {
     content: "\f147";
+}
+.fonticon-settings-1:before {
+    content: "\f148";
+}
+.fonticon-creativity:before {
+    content: "\f149";
+}
+.fonticon-content-marketing:before {
+    content: "\f14a";
+}
+.fonticon-line-chart:before {
+    content: "\f14b";
+}
+.fonticon-cms:before {
+    content: "\f14c";
+}
+.fonticon-hello:before {
+    content: "\f14d";
+}
+.fonticon-password:before {
+    content: "\f14e";
+}
+.fonticon-credit-card:before {
+    content: "\f14f";
+}
+.fonticon-enlarge:before {
+    content: "\f150";
+}
+.fonticon-24-hours:before {
+    content: "\f151";
+}
+.fonticon-heart:before {
+    content: "\f152";
+}
+.fonticon-user-experience:before {
+    content: "\f153";
+}
+.fonticon-web-design:before {
+    content: "\f154";
 }
