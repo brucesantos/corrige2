@@ -8,7 +8,7 @@
 */
 .tipo-de-recurso {
   cursor: pointer;
-  transition: all .2s ease-in-out; 
+  transition: all .2s ease-in-out;
 }
 // Limita o tamanho da coluna com nome do concurso e insere ellipsis
 .concurso {
@@ -25,4 +25,8 @@
   li {
     flex-grow: 1;
   }
+}
+select[readonly] {
+  pointer-events: none;
+  touch-action: none;
 }

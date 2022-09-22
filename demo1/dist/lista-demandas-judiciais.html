@@ -101,7 +101,7 @@
 			          <!--end::Menu separator-->
 			          <!--begin::Menu item-->
 			          <div class="menu-item px-2">
-			            <a href="sign-in.html" class="menu-link px-5">Sair do sistema</a>
+			            <a href="sign-in-judicial.html" class="menu-link px-5">Sair do sistema</a>
 			          </div>
 			          <!--end::Menu item-->
 			        </div>
@@ -187,12 +187,12 @@
 
 												<div class="row mb-5">
 													<div class="col-3">
-												    <label for="dataRecebimento" class="form-label">Data do recebimento</label>
-												    <input id="dataRecebimento" type="email" class="form-control" placeholder="Example input"/>
+												    <label for="" class="form-label">Data do recebimento</label>
+												    <input id="" type="text" class="form-control date-picker" placeholder="Example input"/>
 													</div>
 													<div class="col-3">
 												    <label for="" class="form-label">Número do Processo</label>
-												    <input id="" type="email" class="form-control" placeholder="Example input"/>
+												    <input id="" type="text" class="form-control" placeholder="Example input"/>
 													</div>
 													<div class="col-3">
 												    <label for="" class="form-label">Liminar</label>
@@ -214,7 +214,7 @@
 												</div>
 												<div class="row mb-5">
 													<div class="col-3">
-												    <label for="dataRecebimento" class="form-label">Concurso</label>
+												    <label for="" class="form-label">Concurso</label>
 														<select class="form-select" data-control="select2" data-placeholder="Selecione o Concurso...">
 															<option></option>
 															<option value="1">Option 1</option>
@@ -284,13 +284,12 @@
 																<td class="d-none d-md-table-cell">Ronald Richards</td>
 																<td class="d-none d-md-table-cell">Processo Seletivo para o Tribunal de contas</td>
 																<td class="d-none d-md-table-cell">22/03/2022 <span class="text-danger">24/04/2022</span> </td>
-																<td class="d-none d-md-table-cell">Dianne Russell</td>
+																<td class="d-none d-md-table-cell">Dianne Russell <label class="badge badge-lg badge-light-primary cursor-pointer" data-bs-toggle="modal" data-bs-target="#exibirCandidatos">+3</label> </td>
 																<td class="d-none d-md-table-cell">
 																	<span class="badge badge-light-success fw-bold px-4 py-3">Análise Finalizada</span>
 																</td>
 																<td class="text-end">
-																	<a href="#" class="btn btn-icon btn-light-info"><i class="fa-solid fa-eye"></i></a>
-																	<a href="edit-recurso.html" class="btn btn-icon btn-light-primary"><i class="fa-solid fa-file-pen"></i></a>
+																	<a href="demanda-judicial-analise-finalizada.html" class="btn btn-icon btn-light-info"><i class="fa-solid fa-eye"></i></a>
 																</td>
 															</tr>
 															<tr>
@@ -312,8 +311,7 @@
 																	<span class="badge badge-light-success fw-bold px-4 py-3">Análise Finalizada</span>
 																</td>
 																<td class="text-end">
-																	<a href="#" class="btn btn-icon btn-light-info"><i class="fa-solid fa-eye"></i></a>
-																	<a href="edit-recurso.html" class="btn btn-icon btn-light-primary"><i class="fa-solid fa-file-pen"></i></a>
+																	<a href="demanda-judicial-analise-finalizada.html" class="btn btn-icon btn-light-info"><i class="fa-solid fa-eye"></i></a>
 																</td>
 															</tr>
 															<tr>
@@ -335,8 +333,8 @@
 																	<span class="badge badge-light-info fw-bold px-4 py-3">Aguardando Análise</span>
 																</td>
 																<td class="text-end">
-																	<a href="#" class="btn btn-icon btn-light-info"><i class="fa-solid fa-eye"></i></a>
-																	<a href="edit-recurso.html" class="btn btn-icon btn-light-primary"><i class="fa-solid fa-file-pen"></i></a>
+																	<a href="demanda-judicial-aguardando-analise.html" class="btn btn-icon btn-light-info"><i class="fa-solid fa-eye"></i></a>
+																	<a href="demanda-judicial-aguardando-analise.html" class="btn btn-icon btn-light-primary"><i class="fa-solid fa-file-pen"></i></a>
 																</td>
 															</tr>
 															<tr>
@@ -358,8 +356,8 @@
 																	<span class="badge badge-light-warning fw-bold px-4 py-3">Em Análise</span>
 																</td>
 																<td class="text-end">
-																	<a href="#" class="btn btn-icon btn-light-info"><i class="fa-solid fa-eye"></i></a>
-																	<a href="edit-recurso.html" class="btn btn-icon btn-light-primary"><i class="fa-solid fa-file-pen"></i></a>
+																	<a href="demanda-judicial-em-analise.html" class="btn btn-icon btn-light-info"><i class="fa-solid fa-eye"></i></a>
+																	<a href="demanda-judicial-em-analise.html" class="btn btn-icon btn-light-primary"><i class="fa-solid fa-file-pen"></i></a>
 																</td>
 															</tr>
 														</tbody>
@@ -431,11 +429,11 @@
 	<!--end::Scrolltop-->
 
 	<!--begin::Modals-->
-	<div class="modal fade" tabindex="-1" id="kt_modal_1">
+	<div class="modal fade" tabindex="-1" id="exibirCandidatos">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h3 class="modal-title">Selecione o Concurso e Cargo</h3>
+					<h3 class="modal-title">Candidatos</h3>
 					<!--begin::Close-->
 					<a href="#" data-bs-dismiss="modal" aria-label="Close"><span class="svg-icon svg-icon-1">
 							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -447,27 +445,16 @@
 					<!--end::Close-->
 				</div>
 				<div class="modal-body">
-					<div class="mb-10">
-						<label for="" class="required form-label">Concurso</label>
-						<select class="form-select" data-control="select2" data-placeholder="Selecione um concurso">
-							<option></option>
-							<option value="1">Concurso Público para a Secretaria de Estado de São Paulo</option>
-							<option value="2">Concurso Público para a Secretaria de Estado do Rio de Janeiro</option>
-						</select>
-					</div>
-					<div class="mb-10">
-						<label for="" class="required form-label">Cargo</label>
-						<select class="form-select" data-control="select2" data-placeholder="Selecione um cargo" data-hide-search="true">
-							<option></option>
-							<option value="1">Analista</option>
-						</select>
-					</div>
+					<label>Dianne Russell</label>
+					<div class="separator my-5"></div>
+					<label>Kristin Watson</label>
+					<div class="separator my-5"></div>
+					<label>Theresa Webb</label>
+					<div class="separator my-5"></div>
+					<label>Darlene Robertson</label>
 				</div>
-				<div class="modal-footer justify-content-between">
-					<button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
-					<form action="novo-recurso.html">
-						<button type="submit" class="btn btn-primary">Prosseguir</button>
-					</form>
+				<div class="modal-footer justify-content-end">
+					<button type="button" class="btn btn-light" data-bs-dismiss="modal">Fechar</button>
 				</div>
 			</div>
 		</div>

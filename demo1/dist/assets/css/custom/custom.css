@@ -25,3 +25,8 @@
 #tabsRecurso li {
   flex-grow: 1;
 }
+
+select[readonly] {
+  pointer-events: none;
+  touch-action: none;
+}

@@ -3,7 +3,7 @@
 <!--begin::Head-->
 
 <head>
-	<title>Nova Demanda Judicial</title>
+	<title>Demanda Judicial</title>
 	<meta charset="utf-8" />
 	<meta name="description" content="" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -136,11 +136,11 @@
 									<div class="col-md-12">
 
 										<div class="card card-flush mb-5">
-											<div class="card-body d-flex flex-stack flex-wrap p-5">
+											<div class="card-header d-flex flex-stack flex-wrap p-5">
 												<!--begin::Page title-->
 												<div class="page-title d-flex flex-column me-3">
 													<!--begin::Title-->
-													<h1 class="d-flex text-dark fw-bold my-1 fs-3">Nova Demanda Judicial</h1>
+													<h1 class="d-flex text-dark fw-bold my-1 fs-3">5342765-91.2022.022.0002 <label class="badge badge-warning ms-5">Em Análise</label> </h1>
 													<!--end::Title-->
 													<!--begin::Breadcrumb-->
 													<ul class="breadcrumb breadcrumb-dot fw-semibold text-gray-600 fs-7 my-1">
@@ -153,7 +153,7 @@
 															<a href="lista-demandas-judiciais.html" class="text-gray-600 text-hover-primary">Demandas Judiciais</a>
 														</li>
 														<!--begin::Item-->
-														<li class="breadcrumb-item text-gray-500">Nova</li>
+														<li class="breadcrumb-item text-gray-500">Detalhes</li>
 														<!--end::Item-->
 													</ul>
 													<!--end::Breadcrumb-->
@@ -169,7 +169,7 @@
 
 												<!--begin::Card title-->
 												<div class="card-title flex-column">
-													<h3 class="fw-bold">Informações</h3>
+													<h3 class="fw-bold">Detalhes</h3>
 												</div>
 												<!--end::Card title-->
 
@@ -180,44 +180,32 @@
 
 												<div class="row mb-5">
 													<div class="col-12 col-md-6">
-												    <label for="numeroProcesso" class="required form-label">Número do Processo</label>
-												    <input id="numeroProcesso" type="text" class="form-control" placeholder=""/>
+												    <label for="" class="form-label">Responsável</label>
+												    <input id="" type="text" class="form-control form-control-solid" placeholder="" value="Não informado" aria-disabled="true" readonly/>
 													</div>
 													<div class="col-12 col-md-6">
-												    <label for="concurso" class="required form-label">Concurso</label>
-														<select class="form-select" data-control="select2" data-placeholder="Pesquise pelo Concurso...">
-															<option></option>
-															<option value="1">Option 1</option>
-															<option value="2">Option 2</option>
-														</select>
+												    <label for="" class="form-label">Concurso</label>
+														<input id="" type="text" class="form-control form-control-solid" placeholder="" value="Processo Seletivo para a Prefeitura de Itaquaquecetuba" aria-disabled="true" readonly/>
 													</div>
 												</div>
 
 												<div class="row mb-5">
 													<div class="col-12 col-md-6">
-												    <label for="" class="required form-label">Liminar</label>
-														<select class="form-select" aria-label="Select example">
-														    <option>Selecione...</option>
-														    <option value="1">Sim</option>
-														    <option value="2">Não</option>
-														    <option value="3">Não sei informar</option>
-														</select>
+												    <label for="" class="form-label">Liminar</label>
+														<input id="" type="text" class="form-control form-control-solid" placeholder="" value="Não" aria-disabled="true" readonly/>
 													</div>
 													<div class="col-12 col-md-6">
 												    <label for="" class="form-label">Canal de Recebimento</label>
-														<select class="form-select" data-control="select2" data-placeholder="Selecione o Canal de Recebimento...">
-															<option></option>
-															<option value="1">Option 1</option>
-															<option value="2">Option 2</option>
-														</select>
+														<input id="" type="text" class="form-control form-control-solid" placeholder="" value="E-mail" aria-disabled="true" readonly/>
 													</div>
 												</div>
 
 												<div class="row mb-5">
 													<div class="col-12">
 												    <label for="dataRecebimento" class="form-label">Observações</label>
-														<textarea class="form-control" maxlength="5000" placeholder="Escreva aqui as observações..." rows="6" name=""></textarea>
-														<span class="fs-6 text-muted">Máximo de 500 caracteres</span>
+														<textarea class="form-control form-control-solid" maxlength="5000" placeholder="Escreva aqui as observações..." rows="6" name="" readonly>
+															Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor gravida eu sit. Orci quam eleifend sit accumsan maecenas vel sed ultricies. Cursus sagittis velit eget aliquam at nisi, justo urna, bibendum. Egestas dictum nunc, feugiat vestibulum blandit. Pulvinar ornare malesuada odio condimentum volutpat pharetra. Etiam ipsum diam dignissim massa vel. Potenti nibh velit iaculis pulvinar et purus massa tincidunt. Nulla aliquam iaculis vulputate amet enim. Sit tincidunt dictum viverra enim facilisi aenean purus.
+														</textarea>
 													</div>
 												</div>
 
@@ -231,9 +219,7 @@
 												<div class="card-title flex-column">
 													<h3 class="fw-bold">Candidatos envolvidos</h3>
 												</div>
-												<div class="card-toolbar">
-													<a href="#" data-bs-toggle="modal" data-bs-target="#adicionarCandidato" class="btn btn-light-primary">Adicionar Candidato <i class="fas fa-plus"></i> </a>
-												</div>
+
 											</div>
 											<div class="card-body p-5 pt-0">
 
@@ -260,8 +246,6 @@
 																<td class="d-none d-md-table-cell">Faxineiro</td>
 																<td class="text-end">
 																	<a href="#" class="btn btn-icon btn-light-info"><i class="fa-solid fa-eye"></i></a>
-																	<a href="#" class="btn btn-icon btn-light-primary"><i class="fa-solid fa-file-pen"></i></a>
-																	<a href="#" class="btn btn-icon btn-light-danger"><i class="fa-solid fa-trash"></i></a>
 																</td>
 															</tr>
 														</tbody>
@@ -269,13 +253,6 @@
 													</table>
 													<!--end::Table-->
 												</div>
-
-												<!-- ***************** Alert "Sem candidatos" ****************** -->
-												<!-- <div class="alert alert-secondary d-flex align-items-center p-5">
-												    <div class="d-flex flex-column">
-												        <span class="text-dark">Ainda não há candidatos adicionados</span>
-												    </div>
-												</div> -->
 											</div>
 										</div>
 
@@ -307,11 +284,21 @@
 														<!--begin::Body-->
 														<tbody class="fs-6">
 															<tr>
-																<td class="d-none d-md-table-cell">20/03/2022 <span class="text-muted">09:05</span> </td>
+																<td class="d-none d-md-table-cell">19/03/2022 <span class="text-muted d-block">15:05</span> </td>
 																<td class="d-none d-md-table-cell">Kleber Schweinsteiger</td>
 																<td class="d-none d-md-table-cell">Ofício</td>
-																<td class="d-none d-md-table-cell">Ofício.pdf</td>
+																<td class="d-none d-md-table-cell"><i class="fa-solid fa-file-pdf fs-1 text-primary"></i> oficio.pdf</td>
 																<td class="text-end">
+																	<a href="#" class="btn btn-icon btn-light-primary"><i class="fa-solid fa-cloud-arrow-down"></i></a>
+																</td>
+															</tr>
+															<tr>
+																<td class="d-none d-md-table-cell">20/03/2022 <span class="text-muted d-block">09:05</span> </td>
+																<td class="d-none d-md-table-cell">Anderson Pereira</td>
+																<td class="d-none d-md-table-cell">Ofício</td>
+																<td class="d-none d-md-table-cell"><i class="fa-solid fa-file-pdf fs-1 text-primary"></i> lorem.pdf</td>
+																<td class="text-end">
+																	<a href="#" class="btn btn-icon btn-light-info"><i class="fa-solid fa-eye"></i></a>
 																	<a href="#" class="btn btn-icon btn-light-primary"><i class="fa-solid fa-cloud-arrow-down"></i></a>
 																</td>
 															</tr>
@@ -321,19 +308,154 @@
 													<!--end::Table-->
 												</div>
 
-												<!-- ***************** Alert "Sem Documentos" ****************** -->
-												<!-- <div class="alert alert-secondary d-flex align-items-center p-5">
-												    <div class="d-flex flex-column">
-												        <span class="text-dark">Ainda não há documentos anexados</span>
-												    </div>
-												</div> -->
+											</div>
+										</div>
+
+										<div class="card card-flush mb-5">
+											<div class="card-header p-5">
+												<div class="card-title flex-column">
+													<h3 class="fw-bold">Prazos internos</h3>
+												</div>
+												<div class="card-toolbar">
+													<a href="#" class="btn btn-light-primary" data-bs-toggle="modal" data-bs-target="#cadastrarPrazo">Cadastrar Prazo <i class="fas fa-plus"></i> </a>
+												</div>
+											</div>
+											<div class="card-body p-5 pt-0">
+
+												<div class="table-responsive">
+													<!--begin::Table-->
+													<table id="" class="table table-row-bordered table-row-dashed gy-4 align-middle fw-bold">
+														<!--begin::Head-->
+														<thead class="fs-7 text-gray-400 text-uppercase">
+															<tr>
+																<th class="d-none d-md-table-cell">Data do pedido<br>Prazo de entrega</th>
+																<th class="d-none d-md-table-cell">Responsável</th>
+																<th class="d-none d-md-table-cell">Pedido</th>
+																<th class="d-none d-md-table-cell">Status</th>
+																<th class="d-none d-md-table-cell">Concluir</th>
+																<th width="150" class="text-end">Ações</th>
+															</tr>
+														</thead>
+														<!--end::Head-->
+														<!--begin::Body-->
+														<tbody class="fs-6">
+															<tr>
+																<td class="d-none d-md-table-cell">20/03/2022 <span class="text-danger">24/04/2022</span> </td>
+																<td class="d-none d-md-table-cell">Lucas Silva</td>
+																<td class="d-none d-md-table-cell">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum suspendisse tincidunt scelerisque.</td>
+																<td> <label class="badge badge-danger">Pendente</label> </td>
+																<td>  </td>
+																<td class="text-end">
+																	<a href="#"class="btn btn-icon btn-light-info"><i class="fa-solid fa-eye"></i></a>
+																	<a href="#"class="btn btn-icon btn-light-primary"><i class="fa-solid fa-cloud-arrow-down"></i></a>
+																</td>
+															</tr>
+															<tr>
+																<td class="d-none d-md-table-cell">20/03/2022 <span class="text-danger">24/04/2022</span> </td>
+																<td class="d-none d-md-table-cell">Anderson Pereira</td>
+																<td class="d-none d-md-table-cell">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+																<td> <label class="badge badge-success">Finalizado</label> </td>
+																<td>  </td>
+																<td class="text-end">
+																	<a href="#"class="btn btn-icon btn-light-info"><i class="fa-solid fa-eye"></i></a>
+																	<a href="#"class="btn btn-icon btn-light-primary"><i class="fa-solid fa-cloud-arrow-down"></i></a>
+																</td>
+															</tr>
+														</tbody>
+														<!--end::Body-->
+													</table>
+													<!--end::Table-->
+												</div>
+
+											</div>
+										</div>
+
+										<div class="card card-flush mb-5">
+											<div class="card-header p-5">
+												<div class="card-title flex-column">
+													<h3 class="fw-bold">Histórico</h3>
+												</div>
+											</div>
+											<div class="card-body p-5 pt-0">
+
+												<div class="timeline">
+													<div class="timeline-item">
+														<div class="timeline-line w-40px"></div>
+														<div class="timeline-icon symbol symbol-circle symbol-40px">
+															<div class="symbol-label bg-light">
+																<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2022-09-15-053640/core/html/src/media/icons/duotune/communication/com013.svg-->
+																<span class="svg-icon svg-icon-muted svg-icon-1">
+																	<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path d="M6.28548 15.0861C7.34369 13.1814 9.35142 12 11.5304 12H12.4696C14.6486 12 16.6563 13.1814 17.7145 15.0861L19.3493 18.0287C20.0899 19.3618 19.1259 21 17.601 21H6.39903C4.87406 21 3.91012 19.3618 4.65071 18.0287L6.28548 15.0861Z" fill="currentColor"/>
+																		<rect opacity="0.3" x="8" y="3" width="8" height="8" rx="4" fill="currentColor"/>
+																	</svg>
+																</span>
+																<!--end::Svg Icon-->
+															</div>
+														</div>
+														<div class="timeline-content mb-10 mt-n2">
+															<div class="overflow-auto pe-3">
+																<div class="fs-5 fw-semibold mb-2">20/03/2022 às 09:00</div>
+																<div class="d-flex align-items-center mt-1 fs-6">
+																	<div class="text-muted me-2 fs-7">Análise iniciada por <span class="text-primary">Ronald Richards</span> </div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="timeline-item">
+														<div class="timeline-line w-40px"></div>
+														<div class="timeline-icon symbol symbol-circle symbol-40px">
+															<div class="symbol-label bg-light">
+																<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2022-09-15-053640/core/html/src/media/icons/duotune/communication/com013.svg-->
+																<span class="svg-icon svg-icon-muted svg-icon-1">
+																	<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path d="M6.28548 15.0861C7.34369 13.1814 9.35142 12 11.5304 12H12.4696C14.6486 12 16.6563 13.1814 17.7145 15.0861L19.3493 18.0287C20.0899 19.3618 19.1259 21 17.601 21H6.39903C4.87406 21 3.91012 19.3618 4.65071 18.0287L6.28548 15.0861Z" fill="currentColor"/>
+																		<rect opacity="0.3" x="8" y="3" width="8" height="8" rx="4" fill="currentColor"/>
+																	</svg>
+																</span>
+																<!--end::Svg Icon-->
+															</div>
+														</div>
+														<div class="timeline-content mb-10 mt-n2">
+															<div class="overflow-auto pe-3">
+																<div class="fs-5 fw-semibold mb-2">19/03/2022 às 15:00</div>
+																<div class="d-flex align-items-center mt-1 fs-6">
+																	<div class="text-muted me-2 fs-7"><span class="text-primary">Kleber Schweinsteiger</span> atribuiu  <span class="text-primary">Ronald Richards</span> como responsável pela análise</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="timeline-item">
+														<div class="timeline-line w-40px"></div>
+														<div class="timeline-icon symbol symbol-circle symbol-40px">
+															<div class="symbol-label bg-light">
+																<!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2022-09-15-053640/core/html/src/media/icons/duotune/communication/com013.svg-->
+																<span class="svg-icon svg-icon-muted svg-icon-1">
+																	<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path d="M6.28548 15.0861C7.34369 13.1814 9.35142 12 11.5304 12H12.4696C14.6486 12 16.6563 13.1814 17.7145 15.0861L19.3493 18.0287C20.0899 19.3618 19.1259 21 17.601 21H6.39903C4.87406 21 3.91012 19.3618 4.65071 18.0287L6.28548 15.0861Z" fill="currentColor"/>
+																		<rect opacity="0.3" x="8" y="3" width="8" height="8" rx="4" fill="currentColor"/>
+																	</svg>
+																</span>
+																<!--end::Svg Icon-->
+															</div>
+														</div>
+														<div class="timeline-content mb-10 mt-n2">
+															<div class="overflow-auto pe-3">
+																<div class="fs-5 fw-semibold mb-2">19/03/2022 às 13:22</div>
+																<div class="d-flex align-items-center mt-1 fs-6">
+																	<div class="text-muted me-2 fs-7">Criado por  <span class="text-primary">Kleber Schweinsteiger</span> </div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
 											</div>
 										</div>
 
 										<div class="card card-flush mb-5">
 											<div class="card-body p-5 d-flex justify-content-between">
 												<a href="lista-demandas-judiciais.html" class="btn btn-secondary"> <i class="fas fa-arrow-left"></i> Voltar</a>
-												<a href="#" class="btn btn-primary"> Adicionar Demanda Judicial</a>
 											</div>
 										</div>
 
@@ -395,11 +517,11 @@
 	<!--end::Scrolltop-->
 
 	<!--begin::Modals-->
-	<div class="modal fade" tabindex="-1" id="adicionarCandidato">
-		<div class="modal-dialog">
+	<div class="modal fade" tabindex="-1" id="cadastrarPrazo">
+		<div class="modal-dialog modal-dialog-scrollable">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h3 class="modal-title">Adicionar Candidato</h3>
+					<h3 class="modal-title">Novo Prazo</h3>
 					<!--begin::Close-->
 					<a href="#" data-bs-dismiss="modal" aria-label="Close"><span class="svg-icon svg-icon-1">
 							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -411,39 +533,47 @@
 					<!--end::Close-->
 				</div>
 				<div class="modal-body">
-					<div class="mb-5">
-						<label for="" class="form-label">CPF</label>
-						<input id="cpf" type="text" class="form-control" placeholder=""/>
+
+					<div class="row mb-5">
+						<div class="col-12">
+							<label for="" class="form-label">Prazo de Entrega</label>
+							<input class="form-control date-picker" placeholder="Prazo interno"/>
+						</div>
 					</div>
-					<div class="mb-5">
-						<label for="" class="form-label">Nome do Candidato</label>
-						<select class="form-select" data-control="select2" data-placeholder="Selecione um candidato...">
-							<option></option>
-							<option value="1">Option 1</option>
-							<option value="2">Option 2</option>
-						</select>
+					<div class="row mb-5">
+						<div class="col-12">
+							<label for="" class="form-label">Responsável</label>
+							<input id="" type="text" class="form-control" placeholder=""/>
+						</div>
 					</div>
-					<div class="mb-5">
-						<label for="" class="form-label">Número da Inscrição</label>
-						<input id="numeroInscricao" type="text" class="form-control" placeholder=""/>
+
+					<div class="row mb-5">
+						<div class="col-12">
+							<label for="" class="form-label">Tipo</label>
+							<select class="form-select" aria-label="Select example">
+									<option>Selecione...</option>
+									<option value="1">Lorem ipsum</option>
+									<option value="2">Lorem ipsum</option>
+									<option value="3">Lorem ipsum</option>
+							</select>
+						</div>
 					</div>
-					<div class="mb-5">
-						<label for="" class="form-label">Cargo</label>
-						<select class="form-select" data-control="select2" data-placeholder="Selecione um cargo...">
-							<option></option>
-							<option value="1">Option 1</option>
-							<option value="2">Option 2</option>
-						</select>
+					<div class="row mb-5">
+						<div class="col-12">
+							<label for="" class="form-label">Observação</label>
+							<textarea class="form-control" maxlength="5000" placeholder="Escreva aqui as observações..." rows="6" name=""></textarea>
+							<span class="fs-6 text-muted">Máximo de 500 caracteres</span>
+						</div>
 					</div>
+
 				</div>
 				<div class="modal-footer justify-content-between">
 					<button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
-					<button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Adicionar Candidato</button>
+					<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar Prazo Interno</button>
 				</div>
 			</div>
 		</div>
 	</div>
-
 	<div class="modal fade" tabindex="-1" id="anexarDocumento">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -491,6 +621,7 @@
 			</div>
 		</div>
 	</div>
+
 	<!--end::Modals-->
 
 	<!--begin::Javascript-->
@@ -508,9 +639,6 @@
 	<script src="assets/js/custom/apps/projects/project/project.js"></script>
 	<!--end::Custom Javascript-->
 	<script type="text/javascript">
-		Inputmask({"mask" : "9999999-99.9999.999.9999"}).mask("#numeroProcesso");
-		Inputmask({"mask" : "999.999.999-99"}).mask("#cpf");
-		Inputmask({"mask" : "999.999.999-99"}).mask("#numeroInscricao");
 
 		var myDropzone = new Dropzone("#uploadDocumentos", {
 		    url: "assets/media/custom/documents/", // Set the url for your upload script location
@@ -526,6 +654,42 @@
 		        }
 		    }
 		});
+
+		$(".date-picker").daterangepicker({
+        singleDatePicker: true,
+        showDropdowns: true,
+				minYear: 1901,
+				autoApply: true,
+    		maxYear: parseInt(moment().format('YYYY'),10),
+				locale: {
+	        format: "DD/MM/YYYY",
+	        weekLabel: "W",
+	        daysOfWeek: [
+	            "Dom",
+	            "Seg",
+	            "Ter",
+	            "Qua",
+	            "Qui",
+	            "Sex",
+	            "Sáb"
+	        ],
+	        monthNames: [
+	            "Janeiro",
+	            "Fevereiro",
+	            "Março",
+	            "Abril",
+	            "Maio",
+	            "Junho",
+	            "Julho",
+	            "Agosto",
+	            "Setembro",
+	            "Outubro",
+	            "Novembro",
+	            "Dezembro"
+	        ],
+	    	},
+	    }, function(start, end, label) {}
+		);
 	</script>
 	<!--end::Javascript-->
 </body>
