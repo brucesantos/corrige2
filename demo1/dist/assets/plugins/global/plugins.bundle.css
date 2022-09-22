@@ -32713,7 +32713,7 @@ i[class^=fonticon-]:before, i[class*=" fonticon-"]:before {
   padding-bottom: 0.35rem;
 }
 .select2-container--bootstrap5 .select2-selection--multiple.form-select-sm .select2-selection__choice {
-  border-radius: 0.425rem;
+  border-radius: 0.525rem;
   padding: 0.1rem 0.35rem;
   margin-right: 0.35rem;
   margin-top: 0.1rem;
@@ -32751,7 +32751,7 @@ i[class^=fonticon-]:before, i[class*=" fonticon-"]:before {
   padding-bottom: 0.525rem;
 }
 .select2-container--bootstrap5 .select2-selection--multiple.form-select-lg .select2-selection__choice {
-  border-radius: 0.625rem;
+  border-radius: 0.825rem;
   padding: 0.15rem 0.65rem;
   margin-right: 0.65rem;
   margin-top: 0.15rem;
@@ -32767,7 +32767,7 @@ i[class^=fonticon-]:before, i[class*=" fonticon-"]:before {
 .select2-container--bootstrap5 .select2-dropdown {
   border: 0;
   box-shadow: var(--kt-dropdown-box-shadow);
-  border-radius: 0.475rem;
+  border-radius: 0.725rem;
   padding: 1rem 0;
   background-color: var(--kt-dropdown-bg);
 }
@@ -32784,7 +32784,7 @@ i[class^=fonticon-]:before, i[class*=" fonticon-"]:before {
   color: var(--kt-input-color);
   font-size: 0.925rem;
   border: 1px solid var(--kt-input-border-color);
-  border-radius: 0.425rem;
+  border-radius: 0.525rem;
   outline: 0 !important;
 }
 .select2-container--bootstrap5 .select2-dropdown .select2-search .select2-search__field:focus, .select2-container--bootstrap5 .select2-dropdown .select2-search .select2-search__field:active {
@@ -32909,7 +32909,7 @@ i[class^=fonticon-]:before, i[class*=" fonticon-"]:before {
   box-shadow: var(--kt-dropdown-box-shadow);
   font-family: Inter, Helvetica, "sans-serif";
   z-index: 1000;
-  border-radius: 0.475rem;
+  border-radius: 0.725rem;
 }
 .daterangepicker:after, .daterangepicker:before {
   display: none;
@@ -32925,7 +32925,7 @@ i[class^=fonticon-]:before, i[class*=" fonticon-"]:before {
   border: 0;
 }
 .daterangepicker .ranges {
-  border-radius: 0.475rem;
+  border-radius: 0.725rem;
   background-color: var(--kt-body-bg);
   position: relative;
   overflow: hidden;
@@ -32955,7 +32955,7 @@ i[class^=fonticon-]:before, i[class*=" fonticon-"]:before {
 }
 .daterangepicker.show-calendar .ranges {
   border-radius: 0;
-  border-top-left-radius: 0.475rem;
+  border-top-left-radius: 0.725rem;
   margin-top: 0;
   height: 297px;
 }
@@ -33128,7 +33128,7 @@ i[class^=fonticon-]:before, i[class*=" fonticon-"]:before {
   border-radius: 0;
   box-shadow: var(--kt-dropdown-box-shadow);
   background-color: var(--kt-body-bg);
-  border-radius: 0.475rem;
+  border-radius: 0.725rem;
 }
 .flatpickr-calendar:before, .flatpickr-calendar:after {
   display: none;
@@ -33473,14 +33473,14 @@ span.flatpickr-weekday {
   gap: 0.25rem;
 }
 .tagify.form-control-sm {
-  border-radius: 0.425rem;
+  border-radius: 0.525rem;
   min-height: calc(1.5em + 1.1rem + 2px);
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
 .tagify.form-control-sm .tagify__tag {
   padding: 0.3rem 0.3rem;
-  border-radius: 0.425rem;
+  border-radius: 0.525rem;
 }
 .tagify.form-control-sm .tagify__tag .tagify__tag-text {
   font-size: 0.925rem;
@@ -33499,14 +33499,14 @@ span.flatpickr-weekday {
   font-size: 1.1rem;
 }
 .tagify.form-control-lg {
-  border-radius: 0.625rem;
+  border-radius: 0.825rem;
   min-height: calc(1.5em + 1.65rem + 2px);
   padding-top: 0.325rem;
   padding-bottom: 0.325rem;
 }
 .tagify.form-control-lg .tagify__tag {
   padding: 0.5rem 0.5rem;
-  border-radius: 0.625rem;
+  border-radius: 0.825rem;
 }
 .tagify.form-control-lg .tagify__tag .tagify__tag-text {
   font-size: 1.15rem;
@@ -34197,7 +34197,7 @@ table.dataTable tbody tr > .dtfc-fixed-right {
   font-size: 0.925rem;
   border: 0;
   padding: 0.5rem 0.75rem;
-  border-radius: 0.475rem;
+  border-radius: 0.725rem;
 }
 
 .ql-toolbar {
@@ -34464,7 +34464,7 @@ body.swal2-height-auto {
   /*rtl:ignore*/
   background-position: 1.5rem center !important;
   box-shadow: var(--kt-dropdown-box-shadow) !important;
-  border-radius: 0.475rem !important;
+  border-radius: 0.725rem !important;
   border: 0 !important;
   background-color: var(--kt-gray-100);
   color: var(--kt-gray-700);
@@ -34871,11 +34871,11 @@ body {
   border: 0 !important;
   background-color: var(--kt-tooltip-bg);
   box-shadow: var(--kt-dropdown-box-shadow);
-  border-radius: 0.475rem;
+  border-radius: 0.725rem;
 }
 .fc .fc-popover .fc-popover-header {
-  border-top-left-radius: 0.475rem;
-  border-top-right-radius: 0.475rem;
+  border-top-left-radius: 0.725rem;
+  border-top-right-radius: 0.725rem;
   padding: 0.65rem 0.75rem;
   background-color: var(--kt-tooltip-bg);
 }
