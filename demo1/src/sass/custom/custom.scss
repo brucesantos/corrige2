@@ -1,0 +1,28 @@
+#kt_header {
+    height: 80px;
+}
+
+/*
+  Avaliador
+  Recursos recebidos
+*/
+.tipo-de-recurso {
+  cursor: pointer;
+  transition: all .2s ease-in-out; 
+}
+// Limita o tamanho da coluna com nome do concurso e insere ellipsis
+.concurso {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/*
+  Avaliador
+  Analise do Recurso
+*/
+#tabsRecurso {
+  li {
+    flex-grow: 1;
+  }
+}
