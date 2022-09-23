@@ -178,6 +178,10 @@
 												<!--end::Card title-->
 												<div class="card-toolbar">
 													<a href="#" class="btn btn-light-primary" id="editarDados">Editar Dados</a>
+													<div class="buttons-edicao d-none">
+														<a href="#" class="btn btn-light-primary me-5" id="cancelarAlteracoes">Cancelar</a>
+														<a href="#" class="btn btn-primary" id="salvarAlteracoes">Salvar Alterações</a>
+													</div>
 												</div>
 											</div>
 											<!--end::Card header-->
@@ -187,36 +191,41 @@
 												<div class="row mb-5">
 													<div class="col-12 col-md-6">
 												    <label for="" class="form-label">Responsável</label>
-												    <input id="" type="text" class="form-control form-control-solid" placeholder="" value="Não informado" aria-disabled="true" readonly/>
+												    <input id="" type="text" class="form-control form-control-solid form-editavel" placeholder="" value="Não informado" aria-disabled="true" readonly/>
 													</div>
 													<div class="col-12 col-md-6">
 												    <label for="" class="form-label">Concurso</label>
-														<input id="" type="text" class="form-control form-control-solid" placeholder="" value="Processo Seletivo para a Prefeitura de Itaquaquecetuba" aria-disabled="true" readonly/>
+														<select class="form-select bg-light form-editavel" data-control="select2" data-placeholder="Pesquise pelo Concurso..." aria-disabled="true" disabled>
+															<option></option>
+															<option value="1" selected>Processo Seletivo para a Prefeitura de Itaquaquecetuba</option>
+															<option value="2">Option 2</option>
+														</select>
 													</div>
 												</div>
 
 												<div class="row mb-5">
 													<div class="col-12 col-md-6">
 												    <label for="" class="form-label">Liminar</label>
-														<input id="" type="text" class="form-control form-control-solid" placeholder="" value="Não" aria-disabled="true" readonly/>
+														<input id="" type="text" class="form-control form-control-solid form-editavel" placeholder="" value="Não" aria-disabled="true" readonly/>
 													</div>
 													<div class="col-12 col-md-6">
 												    <label for="" class="form-label">Canal de Recebimento</label>
-														<input id="" type="text" class="form-control form-control-solid" placeholder="" value="E-mail" aria-disabled="true" readonly/>
+														<input id="" type="text" class="form-control form-control-solid form-editavel" placeholder="" value="E-mail" aria-disabled="true" readonly/>
 													</div>
 												</div>
 
 												<div class="row mb-10">
 													<div class="col-12">
 												    <label for="dataRecebimento" class="form-label">Observações</label>
-														<textarea class="form-control form-control-solid" maxlength="5000" placeholder="Escreva aqui as observações..." rows="6" name="" readonly>
+														<textarea class="form-control form-control-solid form-editavel" maxlength="5000" placeholder="Escreva aqui as observações..." rows="6" name="" readonly>
 															Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor gravida eu sit. Orci quam eleifend sit accumsan maecenas vel sed ultricies. Cursus sagittis velit eget aliquam at nisi, justo urna, bibendum. Egestas dictum nunc, feugiat vestibulum blandit. Pulvinar ornare malesuada odio condimentum volutpat pharetra. Etiam ipsum diam dignissim massa vel. Potenti nibh velit iaculis pulvinar et purus massa tincidunt. Nulla aliquam iaculis vulputate amet enim. Sit tincidunt dictum viverra enim facilisi aenean purus.
 														</textarea>
 													</div>
 												</div>
 
-												<div class="mb-5">
-													<h3>Candidatos envolvidos</h3>
+												<div class="d-flex justify-content-between align-items-center mb-5">
+													<h3 class="fw-bold">Candidatos envolvidos</h3>
+													<a href="#" class="btn btn-light-primary adicionar-candidato d-none" data-bs-toggle="modal" data-bs-target="#adicionarCandidato">Adicionar Candidato <i class="fas fa-plus"></i> </a>
 												</div>
 
 												<div class="table-responsive">
@@ -242,6 +251,7 @@
 																<td class="d-none d-md-table-cell">Faxineiro</td>
 																<td class="text-end">
 																	<a href="#" class="btn btn-icon btn-light-info"><i class="fa-solid fa-eye"></i></a>
+																	<a href="#" class="btn btn-icon btn-light-danger remover-item d-none"><i class="fa-solid fa-trash"></i></a>
 																</td>
 															</tr>
 														</tbody>
@@ -303,7 +313,7 @@
 																<td class="d-none d-md-table-cell"><i class="fa-solid fa-file-pdf fs-1 text-primary"></i> oficio.pdf</td>
 																<td class="text-end">
 																	<a href="#" class="btn btn-icon btn-light-primary"><i class="fa-solid fa-cloud-arrow-down"></i></a>
-																	<a href="#" class="btn btn-icon btn-light-danger"><i class="fa-solid fa-trash"></i></a>
+																	<a href="#" class="btn btn-icon btn-light-danger remover-item"><i class="fa-solid fa-trash"></i></a>
 																</td>
 															</tr>
 															<tr>
@@ -312,7 +322,7 @@
 																<td class="d-none d-md-table-cell"><i class="fa-solid fa-file-pdf fs-1 text-primary"></i> lorem.pdf</td>
 																<td class="text-end">
 																	<a href="#" class="btn btn-icon btn-light-primary"><i class="fa-solid fa-cloud-arrow-down"></i></a>
-																	<a href="#" class="btn btn-icon btn-light-danger"><i class="fa-solid fa-trash"></i></a>
+																	<a href="#" class="btn btn-icon btn-light-danger remover-item"><i class="fa-solid fa-trash"></i></a>
 																</td>
 															</tr>
 														</tbody>
@@ -359,6 +369,7 @@
 																<td class="d-none d-md-table-cell"><i class="fa-solid fa-file-pdf fs-1 text-primary"></i> oficio.pdf</td>
 																<td class="text-end">
 																	<a href="#" class="btn btn-icon btn-light-primary"><i class="fa-solid fa-cloud-arrow-down"></i></a>
+																	<a href="#" class="btn btn-icon btn-light-danger remover-item d-none"><i class="fa-solid fa-trash"></i></a>
 																</td>
 															</tr>
 															<tr>
@@ -369,6 +380,7 @@
 																<td class="text-end">
 																	<a href="#" class="btn btn-icon btn-light-info"><i class="fa-solid fa-eye"></i></a>
 																	<a href="#" class="btn btn-icon btn-light-primary"><i class="fa-solid fa-cloud-arrow-down"></i></a>
+																	<a href="#" class="btn btn-icon btn-light-danger remover-item d-none"><i class="fa-solid fa-trash"></i></a>
 																</td>
 															</tr>
 														</tbody>
@@ -474,6 +486,7 @@
 																<td class="text-end">
 																	<a href="#"class="btn btn-icon btn-light-info"><i class="fa-solid fa-eye"></i></a>
 																	<a href="#"class="btn btn-icon btn-light-primary"><i class="fa-solid fa-cloud-arrow-down"></i></a>
+																	<a href="#"class="btn btn-icon btn-light-danger remover-item d-none"><i class="fa-solid fa-trash"></i></a>
 																</td>
 															</tr>
 															<tr>
@@ -485,6 +498,7 @@
 																<td class="text-end">
 																	<a href="#"class="btn btn-icon btn-light-info"><i class="fa-solid fa-eye"></i></a>
 																	<a href="#"class="btn btn-icon btn-light-primary"><i class="fa-solid fa-cloud-arrow-down"></i></a>
+																	<a href="#"class="btn btn-icon btn-light-danger remover-item d-none"><i class="fa-solid fa-trash"></i></a>
 																</td>
 															</tr>
 														</tbody>
@@ -644,6 +658,54 @@
 	<!--end::Scrolltop-->
 
 	<!--begin::Modals-->
+	<div class="modal fade" tabindex="-1" id="adicionarCandidato">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title">Adicionar Candidato</h3>
+					<!--begin::Close-->
+					<a href="#" data-bs-dismiss="modal" aria-label="Close"><span class="svg-icon svg-icon-1">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="currentColor" />
+								<rect x="7" y="15.3137" width="12" height="2" rx="1" transform="rotate(-45 7 15.3137)" fill="currentColor" />
+								<rect x="8.41422" y="7" width="12" height="2" rx="1" transform="rotate(45 8.41422 7)" fill="currentColor" />
+							</svg>
+						</span></a>
+					<!--end::Close-->
+				</div>
+				<div class="modal-body">
+					<div class="mb-5">
+						<label for="" class="form-label">CPF</label>
+						<input id="cpf" type="text" class="form-control" placeholder=""/>
+					</div>
+					<div class="mb-5">
+						<label for="" class="form-label">Nome do Candidato</label>
+						<select class="form-select" data-control="select2" data-placeholder="Selecione um candidato...">
+							<option></option>
+							<option value="1">Option 1</option>
+							<option value="2">Option 2</option>
+						</select>
+					</div>
+					<div class="mb-5">
+						<label for="" class="form-label">Número da Inscrição</label>
+						<input id="numeroInscricao" type="text" class="form-control" placeholder=""/>
+					</div>
+					<div class="mb-5">
+						<label for="" class="form-label">Cargo</label>
+						<select class="form-select" data-control="select2" data-placeholder="Selecione um cargo...">
+							<option></option>
+							<option value="1">Option 1</option>
+							<option value="2">Option 2</option>
+						</select>
+					</div>
+				</div>
+				<div class="modal-footer justify-content-between">
+					<button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+					<button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Adicionar Candidato</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="modal fade" tabindex="-1" id="cadastrarPrazo">
 		<div class="modal-dialog modal-dialog-scrollable">
 			<div class="modal-content">
@@ -792,6 +854,25 @@
 		            done();
 		        }
 		    }
+		});
+
+		$("#editarDados").on("click", function(){
+			$(this).addClass("d-none");
+			$(".buttons-edicao").removeClass("d-none");
+			$(".adicionar-candidato").removeClass("d-none");
+			$(".remover-item").removeClass("d-none");
+			$(".form-editavel").removeAttr("readonly").removeClass("form-control-solid");
+			$("select.form-editavel").removeAttr("disabled").removeClass("bg-light");
+
+		});
+
+		$("#cancelarAlteracoes").on("click", function(){
+			$("#editarDados").removeClass("d-none");
+			$(".buttons-edicao").addClass("d-none");
+			$(".adicionar-candidato").addClass("d-none");
+			$(".remover-item").addClass("d-none");
+			$(".form-editavel").attr("readonly", "readonly").addClass("form-control-solid");
+			$("select.form-editavel").attr("disabled", "disabled").addClass("bg-light");
 		});
 
 		$(".date-picker").daterangepicker({
