@@ -36,9 +36,6 @@
 	<link rel="stylesheet" href="assets/css/custom/custom.css">
 	<!--end::Global Stylesheets Bundle-->
 
-	<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-	<script src="assets/plugins/global/plugins.bundle.js"></script>
-
 </head>
 <!--end::Head-->
 <!--begin::Body-->
@@ -820,7 +817,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="modal fade" tabindex="-1" id="visualizarPrazo" data-bs-keyboard="false" aria-hidden="true" aria-labelledby="visualizarPrazoLabel">
+	<div class="modal fade" tabindex="-1" id="visualizarPrazo" data-bs-keyboard="false" aria-labelledby="visualizarPrazoLabel">
 		<div class="modal-dialog modal-xl modal-dialog-scrollable">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -840,35 +837,39 @@
 
 					<div class="d-flex justify-content-between align-items-center mb-5">
 						<h3 class="fw-bold d-flex align-items-center">2345765-91.2022.022.0002 <label class="badge badge-danger ms-5">Pendente</label> </h3>
-						<a href="#" class="btn btn-light-primary">Atualizar dados</a>
+						<a href="#" class="btn btn-light-primary" id="editarDadosPrazo">Editar Dados</a>
+						<div class="buttons-edicao-prazo d-none">
+							<a href="#" class="btn btn-light-primary me-5" id="cancelarAlteracoesPrazo">Cancelar</a>
+							<a href="#" class="btn btn-primary" id="salvarAlteracoesPrazo">Salvar Alterações</a>
+						</div>
 					</div>
 
 					<div class="row mb-5">
 						<div class="col-12 col-md-6">
 							<label for="" class="form-label">Data do pedido</label>
-							<input id="" type="text" class="form-control form-control-solid" placeholder="" value="Não informado" aria-disabled="true" readonly/>
+							<input id="" type="text" class="form-control date-picker form-control-solid form-editavel-prazo" placeholder="" value="12/03/2021" aria-disabled="true" readonly/>
 						</div>
 						<div class="col-12 col-md-6">
 							<label for="" class="form-label">Prazo de entrega</label>
-							<input id="" type="text" class="form-control form-control-solid" placeholder="" value="Processo Seletivo para a Prefeitura de Itaquaquecetuba" aria-disabled="true" readonly/>
+							<input id="" type="text" class="form-control date-picker form-control-solid form-editavel-prazo text-danger" placeholder="" value="12/03/2022" aria-disabled="true" readonly/>
 						</div>
 					</div>
 
 					<div class="row mb-5">
 						<div class="col-12 col-md-6">
 							<label for="" class="form-label">Responsável</label>
-							<input id="" type="text" class="form-control form-control-solid" placeholder="" value="Não" aria-disabled="true" readonly/>
+							<input id="" type="text" class="form-control form-control-solid form-editavel-prazo" placeholder="" value="Nome do Responsável" aria-disabled="true" readonly/>
 						</div>
 						<div class="col-12 col-md-6">
 							<label for="" class="form-label">Tipo</label>
-							<input id="" type="text" class="form-control form-control-solid" placeholder="" value="Superintendencia" aria-disabled="true" readonly/>
+							<input id="" type="text" class="form-control form-control-solid form-editavel-prazo" placeholder="" value="Lorem ipsum" aria-disabled="true" readonly/>
 						</div>
 					</div>
 
 					<div class="row mb-5">
 						<div class="col-12">
-							<label for="dataRecebimento" class="form-label">Observações</label>
-							<textarea class="form-control form-control-solid" maxlength="5000" placeholder="Escreva aqui as observações..." rows="6" name="" readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor gravida eu sit. Orci quam eleifend sit accumsan maecenas vel sed ultricies. Cursus sagittis velit eget aliquam at nisi, justo urna, bibendum. Egestas dictum nunc, feugiat vestibulum blandit. Pulvinar ornare malesuada odio condimentum volutpat pharetra. Etiam ipsum diam dignissim massa vel. Potenti nibh velit iaculis pulvinar et purus massa tincidunt. Nulla aliquam iaculis vulputate amet enim. Sit tincidunt dictum viverra enim facilisi aenean purus.
+							<label for="" class="form-label">Observações</label>
+							<textarea class="form-control form-control-solid form-editavel-prazo" maxlength="5000" placeholder="Escreva aqui as observações..." rows="6" name="" readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor gravida eu sit. Orci quam eleifend sit accumsan maecenas vel sed ultricies. Cursus sagittis velit eget aliquam at nisi, justo urna, bibendum. Egestas dictum nunc, feugiat vestibulum blandit. Pulvinar ornare malesuada odio condimentum volutpat pharetra. Etiam ipsum diam dignissim massa vel. Potenti nibh velit iaculis pulvinar et purus massa tincidunt. Nulla aliquam iaculis vulputate amet enim. Sit tincidunt dictum viverra enim facilisi aenean purus.
 							</textarea>
 						</div>
 					</div>
@@ -877,7 +878,6 @@
 
 					<div class="d-flex justify-content-between align-items-center mb-5">
 						<h3 class="fw-bold">Documentos Anexados</h3>
-						<a href="#" class="btn btn-light-primary" data-bs-toggle="modal" data-bs-target="#anexarDocumento">Anexar Documento</a>
 					</div>
 
 					<div class="table-responsive">
@@ -908,6 +908,30 @@
 							<!--end::Body-->
 						</table>
 						<!--end::Table-->
+					</div>
+
+					<div class="mb-5">
+						<label for="" class="form-label">Tipo de Documento</label>
+						<select class="form-select" data-placeholder="Selecione o Tipo de Documento...">
+							<option></option>
+							<option value="1">Ofício</option>
+							<option value="1">Petição</option>
+						</select>
+					</div>
+					<div class="mb-5">
+						<form class="form" action="#" method="post">
+						    <div class="fv-row">
+						        <div class="dropzone" id="uploadDocumentos">
+						            <div class="dz-message needsclick">
+						                <i class="bi bi-file-earmark-arrow-up text-primary fs-3x"></i>
+						                <div class="ms-4">
+						                    <h3 class="fs-5 fw-bold text-gray-900 mb-1">Envie seus documentos aqui</h3>
+						                    <span class="fs-7 fw-semibold text-gray-400">Arraste ou Selecione o documento</span>
+						                </div>
+						            </div>
+						        </div>
+						    </div>
+						</form>
 					</div>
 
 					<div class="separator border-secondary my-10"></div>
@@ -1076,6 +1100,21 @@
 			$("select.form-editavel").attr("disabled", "disabled").addClass("bg-light");
 		});
 
+		$("#editarDadosPrazo").on("click", function(){
+			$(this).addClass("d-none");
+			$(".buttons-edicao-prazo").removeClass("d-none");
+			$(".form-editavel-prazo").removeAttr("readonly").removeClass("form-control-solid");
+			$("select.form-editavel-prazo").removeAttr("disabled").removeClass("bg-light");
+
+		});
+
+		$("#cancelarAlteracoesPrazo").on("click", function(){
+			$("#editarDadosPrazo").removeClass("d-none");
+			$(".buttons-edicao-prazo").addClass("d-none");
+			$(".form-editavel-prazo").attr("readonly", "readonly").addClass("form-control-solid");
+			$("select.form-editavel-prazo").attr("disabled", "disabled").addClass("bg-light");
+		});
+
 		$(".date-picker").daterangepicker({
         singleDatePicker: true,
         showDropdowns: true,
@@ -1122,6 +1161,7 @@
     	}, 1000);
 			$(resultadoAnalise).fadeTo('slow', 0).fadeTo('slow', 1.0);
 		});
+
 	</script>
 	<!--end::Javascript-->
 </body>
