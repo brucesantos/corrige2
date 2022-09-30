@@ -30,3 +30,15 @@ select[readonly] {
   pointer-events: none;
   touch-action: none;
 }
+
+.card-header {
+  padding: 1.25em !important;
+}
+
+.card-body {
+  padding: 1.25em !important;
+}
+
+.card-footer {
+  padding: 1.25em !important;
+}
